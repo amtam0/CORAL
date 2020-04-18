@@ -43,8 +43,19 @@ ln -s /usr/lib/python3/dist-packages/edgetpu/ edgetpu
 python pose_camera.py
 ```
 
+### Install opencv 3+ support [Edgeelectronics-link](https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/get_pi_requirements.sh)
 
+remove unecessary package
+```
+sudo apt-get purge wolfram-engine
+sudo apt-get purge libreoffice*
+sudo apt-get clean
+sudo apt-get autoremove
+```
 
+```
+bash opencv.sh
+```
 
 
 <<<<<<< HEAD
