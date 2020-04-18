@@ -30,13 +30,22 @@ sudo apt-get update
 sudo apt-get install libedgetpu1-std
 pip3 install https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp37-cp37m-linux_armv7l.whl
 sudo apt-get install libatlas-base-dev
+sudo apt-get install python3-edgetpu
 pip3 install -r requirements.txt
 ```
-Link edgetpu package
+### export path of edgetpu package
 ```
 cd coralenv/lib/python3.7/site-packages/
 ln -s /usr/lib/python3/dist-packages/edgetpu/ edgetpu
 ```
+### Run
+```
+python pose_camera.py
+```
+
+
+
+
 
 <<<<<<< HEAD
 
