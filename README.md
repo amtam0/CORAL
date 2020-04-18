@@ -11,7 +11,11 @@ Setuptools of Raspbian in Linux
   - open Etcher and Flash !
 - insert sd card
 - Start Raspberry pi and follow installation instructions
-
+```
+sudo apt-get update
+sudo apt-get upgrade
+reboot
+```
 
 TODO : Create bash script that setup Everything
 
