@@ -18,16 +18,8 @@ reboot
 ```
 pip3 install virtualenv
 
-python3 -m venv tellocv-env
-
-
-TODO : Create bash script that setup Everything
-
-pip3 install virtualenv
-
-python3 -m venv tellocv-env
-
-bash get_pi_requirements.sh
+python3 -m venv coralenv
+source coralenv/bin/activate
 
 ### Setup Coral
 support [link](https://coral.ai/docs/accelerator/get-started/#on-linux)
@@ -37,8 +29,14 @@ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install libedgetpu1-std
 pip3 install https://dl.google.com/coral/python/tflite_runtime-2.1.0.post1-cp37-cp37m-linux_armv7l.whl
+sudo apt-get install libatlas-base-dev
+pip3 install -r requirements.txt
 ```
-
+Link edgetpu package
+```
+cd coralenv/lib/python3.7/site-packages/
+ln -s /usr/lib/python3/dist-packages/edgetpu/ edgetpu
+```
 
 <<<<<<< HEAD
 
