@@ -6,7 +6,12 @@ Requirements:
 
 Setuptools of Raspbian in Linux
 - cfdisk (repartition sd card)
-- etcher (flash drive)
+- etcher (flash drive)  
+  - image [link](ttps://www.raspberrypi.org/downloads/raspbian/)
+  - open Etcher and Flash !
+- insert sd card
+- Start Raspberry pi and follow installation instructions
+
 
 TODO : Create bash script that setup Everything
 
