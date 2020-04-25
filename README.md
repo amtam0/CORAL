@@ -60,13 +60,15 @@ bash opencv.sh
 
 =======
 >>>>>>> 39eb7957c21978f95c0bbbbeeb58fd5c9da2fd22
+```=======
 source tellocv-env/bin/activate
 bash get_pi_requirements.sh
 sudo apt-get install -y pkg-config libavformat-dev libavcodec-dev libavdevice-dev libavutil-dev libswscale-dev libavresample-dev libavfilter-de
+```
 =======
 
 <<<<<<< HEAD
-=======
+```
 sudo apt install libavdevice-dev libavfilter-dev #needed for av
 pip3 install --upgrade setuptools
 pip3 install -r requirements.txt
@@ -74,3 +76,4 @@ git clone https://github.com/hanyazou/TelloPy
 cd TelloPy
 python3 setup.py bdist_wheel
 pip3 install dist/tellopy-*.dev*.whl --upgrade
+```
